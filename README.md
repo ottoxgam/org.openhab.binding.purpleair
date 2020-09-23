@@ -43,9 +43,25 @@ _Here you should provide information about available channel types, what their m
 
 _Note that it is planned to generate some part of this based on the XML files within ```src/main/resources/ESH-INF/thing``` of your binding._
 
-| channel  | type   | description                  |
-|----------|--------|------------------------------|
-| control  | Switch | This is the control channel  |
+| channel         | type   | description                                           |
+|-----------------|--------|-------------------------------------------------------|
+| pm1value        | number | PM1.0 (CF=ATM) ug/m3                                  |
+| pm25value       | number | PM2.5 (CF=1) ug/m3 This is the field to use for PM2.5 |
+| pm10value       | number | PM10.0 (CF=ATM) ug/m3                                 |
+| rssi            | number | Station RSSI                                          |
+| lastseen        | number | The timestamp of the last PurpleAir update.           |
+| uptime          | number | Station uptime                                        |
+| Humidity        | number | Current Humidity                                      |
+| Pressure        | number | Current Pressure                                      |
+| label           | string | Name of the Purple Air Sensor                         |
+| Latitude        | number | Latitude of the Purple Air Sensor                     |
+| Longitude       | number | Longitude of the Purple Air Sensor                    |
+| aqi             | string | AQI number                                            |
+| aqidescription  | string | A short description of the provided AQI               |
+| aqimessage      | string | What the provided AQI means (a longer description)    |
+|-----------------|--------|-------------------------------------------------------|
+
+
 
 ## Full Example
 
